@@ -1,0 +1,61 @@
+body {
+    background-color: beige;
+}
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto auto auto;
+    text-align: center;
+}
+
+header {
+    background-color: lightblue;
+    padding-top: 10px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding-bottom: 20px;
+}
+
+.intro {
+    padding-top: 20px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 0px white;
+    padding-bottom: 20px;
+}
+
+.contact_info {
+    padding-top: 20px;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 20px;
+}
+
+footer {
+    padding-top: 50px;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.Basketball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        top: 0;
+    }
+    50% {
+        top: 100px
+    }
+}
